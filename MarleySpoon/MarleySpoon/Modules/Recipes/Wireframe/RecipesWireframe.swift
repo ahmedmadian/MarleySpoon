@@ -26,6 +26,10 @@ class RecipesWireframe: BaseWireframe {
 
 extension RecipesWireframe: RecipesWireframeInterface {
     func navigate(to option: RecipesWireframeNavigationOption) {
-        
+        switch option {
+        case .detail(let recipe):
+            let detailsWireframe = RecipeDetailsWireframe(recipe: recipe)
+            self.viewController.present(wireframe: detailsWireframe, modalPresentationStyle: .automatic, animated: true)
+        }
     }
 }
