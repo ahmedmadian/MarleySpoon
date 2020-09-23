@@ -23,6 +23,18 @@
 		DE99FBA6251BD25500863D84 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA5251BD25500863D84 /* PresenterInterface.swift */; };
 		DE99FBA8251BD27A00863D84 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA7251BD27A00863D84 /* BaseWireframe.swift */; };
 		DE99FBAA251BD2AF00863D84 /* WireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA9251BD2AF00863D84 /* WireframeInterface.swift */; };
+		DE99FBAC251BD2F300863D84 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBAB251BD2F300863D84 /* BaseViewController.swift */; };
+		DE99FBB1251BD36F00863D84 /* RecipesContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBB0251BD36F00863D84 /* RecipesContract.swift */; };
+		DE99FBB4251BD3AB00863D84 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBB3251BD3AB00863D84 /* RecipesViewController.swift */; };
+		DE99FBB7251BD3DD00863D84 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBB6251BD3DD00863D84 /* RecipeCell.swift */; };
+		DE99FBB9251BD40800863D84 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBB8251BD40800863D84 /* RecipeViewModel.swift */; };
+		DE99FBBC251BD42D00863D84 /* ReceipesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBBB251BD42D00863D84 /* ReceipesHeaderView.swift */; };
+		DE99FBBE251BD44500863D84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBBD251BD44500863D84 /* CardView.swift */; };
+		DE99FBC0251BD46000863D84 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBBF251BD46000863D84 /* CardViewModel.swift */; };
+		DE99FBC4251BD4A700863D84 /* RecipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC3251BD4A700863D84 /* RecipesPresenter.swift */; };
+		DE99FBC6251BD4DA00863D84 /* RecipesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC5251BD4DA00863D84 /* RecipesInteractor.swift */; };
+		DE99FBC8251BD4F100863D84 /* RecipesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC7251BD4F100863D84 /* RecipesWireframe.swift */; };
+		DE99FBCD251BD59500863D84 /* RecipesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBCC251BD59500863D84 /* RecipesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +58,18 @@
 		DE99FBA5251BD25500863D84 /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		DE99FBA7251BD27A00863D84 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		DE99FBA9251BD2AF00863D84 /* WireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeInterface.swift; sourceTree = "<group>"; };
+		DE99FBAB251BD2F300863D84 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DE99FBB0251BD36F00863D84 /* RecipesContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesContract.swift; sourceTree = "<group>"; };
+		DE99FBB3251BD3AB00863D84 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		DE99FBB6251BD3DD00863D84 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		DE99FBB8251BD40800863D84 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		DE99FBBB251BD42D00863D84 /* ReceipesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipesHeaderView.swift; sourceTree = "<group>"; };
+		DE99FBBD251BD44500863D84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DE99FBBF251BD46000863D84 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		DE99FBC3251BD4A700863D84 /* RecipesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPresenter.swift; sourceTree = "<group>"; };
+		DE99FBC5251BD4DA00863D84 /* RecipesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesInteractor.swift; sourceTree = "<group>"; };
+		DE99FBC7251BD4F100863D84 /* RecipesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesWireframe.swift; sourceTree = "<group>"; };
+		DE99FBCC251BD59500863D84 /* RecipesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesService.swift; sourceTree = "<group>"; };
 		F1DF799ED3F59F05253BD3FB /* Pods-MarleySpoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoon.release.xcconfig"; path = "Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +114,8 @@
 		DE99FB76251BCDB500863D84 /* MarleySpoon */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FBBA251BD41C00863D84 /* Views */,
+				DE99FBAE251BD35700863D84 /* Modules */,
 				DE99FB9D251BD1D100863D84 /* Library */,
 				DE99FB95251BD05000863D84 /* Entities */,
 				DE99FB8F251BCF2D00863D84 /* Data Manager */,
@@ -130,6 +156,7 @@
 		DE99FB8F251BCF2D00863D84 /* Data Manager */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FBCB251BD57E00863D84 /* RemoteServices */,
 				DE99FB90251BCF4F00863D84 /* Contentful */,
 			);
 			path = "Data Manager";
@@ -157,6 +184,7 @@
 		DE99FB9D251BD1D100863D84 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FBAB251BD2F300863D84 /* BaseViewController.swift */,
 				DE99FB9E251BD1EF00863D84 /* AutoLayout + Extentions.swift */,
 				DE99FBA0251BD21500863D84 /* VIPER */,
 			);
@@ -173,6 +201,94 @@
 				DE99FBA9251BD2AF00863D84 /* WireframeInterface.swift */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		DE99FBAE251BD35700863D84 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBAF251BD35E00863D84 /* Recipes */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DE99FBAF251BD35E00863D84 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBB0251BD36F00863D84 /* RecipesContract.swift */,
+				DE99FBB2251BD39D00863D84 /* View */,
+				DE99FBC9251BD50100863D84 /* Interactor */,
+				DE99FBC2251BD49100863D84 /* Presenter */,
+				DE99FBCA251BD52200863D84 /* Wireframe */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		DE99FBB2251BD39D00863D84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBB5251BD3C700863D84 /* Cell */,
+				DE99FBB3251BD3AB00863D84 /* RecipesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE99FBB5251BD3C700863D84 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBB6251BD3DD00863D84 /* RecipeCell.swift */,
+				DE99FBB8251BD40800863D84 /* RecipeViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DE99FBBA251BD41C00863D84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBBB251BD42D00863D84 /* ReceipesHeaderView.swift */,
+				DE99FBC1251BD47800863D84 /* CardView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE99FBC1251BD47800863D84 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBBD251BD44500863D84 /* CardView.swift */,
+				DE99FBBF251BD46000863D84 /* CardViewModel.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		DE99FBC2251BD49100863D84 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBC3251BD4A700863D84 /* RecipesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE99FBC9251BD50100863D84 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBC5251BD4DA00863D84 /* RecipesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DE99FBCA251BD52200863D84 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBC7251BD4F100863D84 /* RecipesWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		DE99FBCB251BD57E00863D84 /* RemoteServices */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBCC251BD59500863D84 /* RecipesService.swift */,
+			);
+			path = RemoteServices;
 			sourceTree = "<group>";
 		};
 		F020772C410A9DF79ED9A58A /* Pods */ = {
@@ -298,19 +414,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE99FBB4251BD3AB00863D84 /* RecipesViewController.swift in Sources */,
 				DE99FB94251BCF9400863D84 /* ContentfulClientProvider.swift in Sources */,
 				DE99FB78251BCDB500863D84 /* AppDelegate.swift in Sources */,
 				DE99FBA6251BD25500863D84 /* PresenterInterface.swift in Sources */,
+				DE99FBB7251BD3DD00863D84 /* RecipeCell.swift in Sources */,
 				DE99FBA8251BD27A00863D84 /* BaseWireframe.swift in Sources */,
+				DE99FBC8251BD4F100863D84 /* RecipesWireframe.swift in Sources */,
+				DE99FBBC251BD42D00863D84 /* ReceipesHeaderView.swift in Sources */,
 				DE99FB9B251BD08B00863D84 /* Chef.swift in Sources */,
+				DE99FBAC251BD2F300863D84 /* BaseViewController.swift in Sources */,
+				DE99FBB1251BD36F00863D84 /* RecipesContract.swift in Sources */,
 				DE99FB9F251BD1EF00863D84 /* AutoLayout + Extentions.swift in Sources */,
+				DE99FBB9251BD40800863D84 /* RecipeViewModel.swift in Sources */,
+				DE99FBC4251BD4A700863D84 /* RecipesPresenter.swift in Sources */,
 				DE99FBA2251BD22100863D84 /* ViewInterface.swift in Sources */,
 				DE99FB99251BD07600863D84 /* Tag.swift in Sources */,
+				DE99FBBE251BD44500863D84 /* CardView.swift in Sources */,
 				DE99FBA4251BD23C00863D84 /* InteractorInterface.swift in Sources */,
 				DE99FB97251BD05C00863D84 /* Recipe.swift in Sources */,
+				DE99FBC6251BD4DA00863D84 /* RecipesInteractor.swift in Sources */,
+				DE99FBCD251BD59500863D84 /* RecipesService.swift in Sources */,
 				DE99FB92251BCF6E00863D84 /* ContentfulCredentials.swift in Sources */,
 				DE99FBAA251BD2AF00863D84 /* WireframeInterface.swift in Sources */,
 				DE99FB7A251BCDB500863D84 /* SceneDelegate.swift in Sources */,
+				DE99FBC0251BD46000863D84 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
