@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B702AA4866224934D0A1057 /* Pods_MarleySpoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BAD20A79DD150AF7C1170A /* Pods_MarleySpoon.framework */; };
 		DE99FB78251BCDB500863D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB77251BCDB500863D84 /* AppDelegate.swift */; };
 		DE99FB7A251BCDB500863D84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB79251BCDB500863D84 /* SceneDelegate.swift */; };
 		DE99FB7C251BCDB500863D84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB7B251BCDB500863D84 /* ViewController.swift */; };
 		DE99FB81251BCDB700863D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99FB80251BCDB700863D84 /* Assets.xcassets */; };
 		DE99FB84251BCDB700863D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99FB82251BCDB700863D84 /* LaunchScreen.storyboard */; };
+		DE99FB92251BCF6E00863D84 /* ContentfulCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB91251BCF6E00863D84 /* ContentfulCredentials.swift */; };
+		DE99FB94251BCF9400863D84 /* ContentfulClientProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB93251BCF9400863D84 /* ContentfulClientProvider.swift */; };
+		DE99FB97251BD05C00863D84 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB96251BD05C00863D84 /* Recipe.swift */; };
+		DE99FB99251BD07600863D84 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB98251BD07600863D84 /* Tag.swift */; };
+		DE99FB9B251BD08B00863D84 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB9A251BD08B00863D84 /* Chef.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B39F403DE2528E619F8EF32 /* Pods-MarleySpoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoon.debug.xcconfig"; path = "Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon.debug.xcconfig"; sourceTree = "<group>"; };
+		A6BAD20A79DD150AF7C1170A /* Pods_MarleySpoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarleySpoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99FB74251BCDB500863D84 /* Marley Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marley Spoon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99FB77251BCDB500863D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE99FB79251BCDB500863D84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +30,13 @@
 		DE99FB80251BCDB700863D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE99FB83251BCDB700863D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE99FB85251BCDB700863D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE99FB91251BCF6E00863D84 /* ContentfulCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulCredentials.swift; sourceTree = "<group>"; };
+		DE99FB93251BCF9400863D84 /* ContentfulClientProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulClientProvider.swift; sourceTree = "<group>"; };
+		DE99FB96251BD05C00863D84 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		DE99FB98251BD07600863D84 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		DE99FB9A251BD08B00863D84 /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
+		DE99FB9C251BD10800863D84 /* variables.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = variables.xcconfig; sourceTree = "<group>"; };
+		F1DF799ED3F59F05253BD3FB /* Pods-MarleySpoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoon.release.xcconfig"; path = "Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +44,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B702AA4866224934D0A1057 /* Pods_MarleySpoon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C78F26F9264FBC6B3F75790 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6BAD20A79DD150AF7C1170A /* Pods_MarleySpoon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE99FB6B251BCDB500863D84 = {
 			isa = PBXGroup;
 			children = (
 				DE99FB76251BCDB500863D84 /* MarleySpoon */,
 				DE99FB75251BCDB500863D84 /* Products */,
+				F020772C410A9DF79ED9A58A /* Pods */,
+				3C78F26F9264FBC6B3F75790 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,8 @@
 		DE99FB76251BCDB500863D84 /* MarleySpoon */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FB95251BD05000863D84 /* Entities */,
+				DE99FB8F251BCF2D00863D84 /* Data Manager */,
 				DE99FB8B251BCDED00863D84 /* Core */,
 				DE99FB7B251BCDB500863D84 /* ViewController.swift */,
 				DE99FB8C251BCE7B00863D84 /* Resources */,
@@ -84,8 +112,45 @@
 			isa = PBXGroup;
 			children = (
 				DE99FB85251BCDB700863D84 /* Info.plist */,
+				DE99FB9C251BD10800863D84 /* variables.xcconfig */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE99FB8F251BCF2D00863D84 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FB90251BCF4F00863D84 /* Contentful */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		DE99FB90251BCF4F00863D84 /* Contentful */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FB91251BCF6E00863D84 /* ContentfulCredentials.swift */,
+				DE99FB93251BCF9400863D84 /* ContentfulClientProvider.swift */,
+			);
+			path = Contentful;
+			sourceTree = "<group>";
+		};
+		DE99FB95251BD05000863D84 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FB96251BD05C00863D84 /* Recipe.swift */,
+				DE99FB98251BD07600863D84 /* Tag.swift */,
+				DE99FB9A251BD08B00863D84 /* Chef.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F020772C410A9DF79ED9A58A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B39F403DE2528E619F8EF32 /* Pods-MarleySpoon.debug.xcconfig */,
+				F1DF799ED3F59F05253BD3FB /* Pods-MarleySpoon.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99FB88251BCDB700863D84 /* Build configuration list for PBXNativeTarget "MarleySpoon" */;
 			buildPhases = (
+				A4DA10FDDCB1E685CB888D37 /* [CP] Check Pods Manifest.lock */,
 				DE99FB70251BCDB500863D84 /* Sources */,
 				DE99FB71251BCDB500863D84 /* Frameworks */,
 				DE99FB72251BCDB500863D84 /* Resources */,
+				9C24B1B57580C97324783B18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,13 +220,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C24B1B57580C97324783B18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DA10FDDCB1E685CB888D37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarleySpoon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE99FB70251BCDB500863D84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE99FB94251BCF9400863D84 /* ContentfulClientProvider.swift in Sources */,
 				DE99FB7C251BCDB500863D84 /* ViewController.swift in Sources */,
 				DE99FB78251BCDB500863D84 /* AppDelegate.swift in Sources */,
+				DE99FB9B251BD08B00863D84 /* Chef.swift in Sources */,
+				DE99FB99251BD07600863D84 /* Tag.swift in Sources */,
+				DE99FB97251BD05C00863D84 /* Recipe.swift in Sources */,
+				DE99FB92251BCF6E00863D84 /* ContentfulCredentials.swift in Sources */,
 				DE99FB7A251BCDB500863D84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,6 +294,7 @@
 /* Begin XCBuildConfiguration section */
 		DE99FB86251BCDB700863D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE99FB9C251BD10800863D84 /* variables.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -240,6 +355,7 @@
 		};
 		DE99FB87251BCDB700863D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE99FB9C251BD10800863D84 /* variables.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -294,6 +410,7 @@
 		};
 		DE99FB89251BCDB700863D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B39F403DE2528E619F8EF32 /* Pods-MarleySpoon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +428,7 @@
 		};
 		DE99FB8A251BCDB700863D84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DF799ED3F59F05253BD3FB /* Pods-MarleySpoon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
