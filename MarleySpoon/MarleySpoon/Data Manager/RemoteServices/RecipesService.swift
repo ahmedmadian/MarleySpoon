@@ -8,14 +8,21 @@
 
 import Contentful
 
-class RecipesService {
+protocol RecipesRemoteService {
+    func fetchRecipes(_ completion: @escaping (Result<[Recipe], Error>) -> Void)
+}
+
+class RecipesService: RecipesRemoteService {
     
-    let client = ContentfulClientProvider(credentials: ContentfulCredentials.default).deliveryClient
+    private let _client: Client
     
+    init(client: Client) {
+        self._client = client
+    }
     
     func fetchRecipes(_ completion: @escaping (Result<[Recipe], Error>) -> Void) {
         
-        client.fetchArray(of: Recipe.self) { (result: Result<HomogeneousArrayResponse<Recipe>, Error>) in
+        _client.fetchArray(of: Recipe.self) { (result: Result<HomogeneousArrayResponse<Recipe>, Error>) in
             switch result {
             case .success(let arrayResponse):
                 let recipes = arrayResponse.items

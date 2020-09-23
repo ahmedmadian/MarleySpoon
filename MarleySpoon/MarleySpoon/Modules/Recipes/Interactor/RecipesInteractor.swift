@@ -10,13 +10,17 @@ import Foundation
 
 class RecipesInteractor {
     
-    private let service = RecipesService()
+    private let _recipeService: RecipesRemoteService
+    
+    init(recipeService: RecipesRemoteService) {
+        self._recipeService = recipeService
+    }
     
 }
 
 extension RecipesInteractor: RecipesInteraction {
     func getRecipes(_ completion: @escaping (Result<[Recipe], Error>) -> Void) {
-        service.fetchRecipes { (result) in
+        _recipeService.fetchRecipes { (result) in
             completion(result)
         }
     }
