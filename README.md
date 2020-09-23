@@ -18,6 +18,7 @@ The main parts of VIPER are:
 **Entity -** Contains basic model objects used by the Interactor. <br /><br />
 **Routing -** Contains navigation logic for describing which screens are shown in which order. <br /><br />
 
+![](MarelySpoon.gif) <br />
 
 ### Pods
 
