@@ -12,16 +12,18 @@ protocol RecipesRemoteService {
     func fetchRecipes(_ completion: @escaping (Result<[Recipe], Error>) -> Void)
 }
 
-class RecipesService: RecipesRemoteService {
+class RecipesService {
     
     private let _client: Client
     
     init(client: Client) {
         self._client = client
     }
+}
+
+extension RecipesService: RecipesRemoteService {
     
     func fetchRecipes(_ completion: @escaping (Result<[Recipe], Error>) -> Void) {
-        
         _client.fetchArray(of: Recipe.self) { (result: Result<HomogeneousArrayResponse<Recipe>, Error>) in
             switch result {
             case .success(let arrayResponse):
@@ -32,4 +34,5 @@ class RecipesService: RecipesRemoteService {
             }
         }
     }
+    
 }

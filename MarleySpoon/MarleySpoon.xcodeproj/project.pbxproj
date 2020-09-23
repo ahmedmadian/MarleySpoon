@@ -173,18 +173,18 @@
 			isa = PBXGroup;
 			children = (
 				DE99FBCB251BD57E00863D84 /* RemoteServices */,
-				DE99FB90251BCF4F00863D84 /* Contentful */,
+				DE99FB90251BCF4F00863D84 /* Contentful API */,
 			);
 			path = "Data Manager";
 			sourceTree = "<group>";
 		};
-		DE99FB90251BCF4F00863D84 /* Contentful */ = {
+		DE99FB90251BCF4F00863D84 /* Contentful API */ = {
 			isa = PBXGroup;
 			children = (
 				DE99FB91251BCF6E00863D84 /* ContentfulCredentials.swift */,
 				DE99FB93251BCF9400863D84 /* ContentfulClientProvider.swift */,
 			);
-			path = Contentful;
+			path = "Contentful API";
 			sourceTree = "<group>";
 		};
 		DE99FB95251BD05000863D84 /* Entities */ = {

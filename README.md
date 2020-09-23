@@ -20,7 +20,11 @@ The main parts of VIPER are:
 
 ![](MarelySpoon.gif) <br />
 
-### Pods
+### Dependancy Manager
+
+COCOAPODS
+
+### Pods Installed
 
 Contentful <br />
 Kingfisher  <br />
