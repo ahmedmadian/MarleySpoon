@@ -1,6 +1,6 @@
 # Marley Spoon
 
-![](marleySpoon.png) <br />
+![](marleySpoon.jpg) <br />
 
 <br />
 This repository contains a demo for sample Master-Detail iOS App, An Application designed based on Use Cases with help of VIPER architecture and consumes data from Contentful API.
