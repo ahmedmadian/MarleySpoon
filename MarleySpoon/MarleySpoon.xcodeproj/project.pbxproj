@@ -10,7 +10,6 @@
 		2B702AA4866224934D0A1057 /* Pods_MarleySpoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BAD20A79DD150AF7C1170A /* Pods_MarleySpoon.framework */; };
 		DE99FB78251BCDB500863D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB77251BCDB500863D84 /* AppDelegate.swift */; };
 		DE99FB7A251BCDB500863D84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB79251BCDB500863D84 /* SceneDelegate.swift */; };
-		DE99FB7C251BCDB500863D84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB7B251BCDB500863D84 /* ViewController.swift */; };
 		DE99FB81251BCDB700863D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99FB80251BCDB700863D84 /* Assets.xcassets */; };
 		DE99FB84251BCDB700863D84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99FB82251BCDB700863D84 /* LaunchScreen.storyboard */; };
 		DE99FB92251BCF6E00863D84 /* ContentfulCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB91251BCF6E00863D84 /* ContentfulCredentials.swift */; };
@@ -18,6 +17,12 @@
 		DE99FB97251BD05C00863D84 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB96251BD05C00863D84 /* Recipe.swift */; };
 		DE99FB99251BD07600863D84 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB98251BD07600863D84 /* Tag.swift */; };
 		DE99FB9B251BD08B00863D84 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB9A251BD08B00863D84 /* Chef.swift */; };
+		DE99FB9F251BD1EF00863D84 /* AutoLayout + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FB9E251BD1EF00863D84 /* AutoLayout + Extentions.swift */; };
+		DE99FBA2251BD22100863D84 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA1251BD22100863D84 /* ViewInterface.swift */; };
+		DE99FBA4251BD23C00863D84 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA3251BD23C00863D84 /* InteractorInterface.swift */; };
+		DE99FBA6251BD25500863D84 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA5251BD25500863D84 /* PresenterInterface.swift */; };
+		DE99FBA8251BD27A00863D84 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA7251BD27A00863D84 /* BaseWireframe.swift */; };
+		DE99FBAA251BD2AF00863D84 /* WireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBA9251BD2AF00863D84 /* WireframeInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +31,6 @@
 		DE99FB74251BCDB500863D84 /* Marley Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marley Spoon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99FB77251BCDB500863D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE99FB79251BCDB500863D84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE99FB7B251BCDB500863D84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE99FB80251BCDB700863D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE99FB83251BCDB700863D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE99FB85251BCDB700863D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +40,12 @@
 		DE99FB98251BD07600863D84 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		DE99FB9A251BD08B00863D84 /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
 		DE99FB9C251BD10800863D84 /* variables.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = variables.xcconfig; sourceTree = "<group>"; };
+		DE99FB9E251BD1EF00863D84 /* AutoLayout + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AutoLayout + Extentions.swift"; sourceTree = "<group>"; };
+		DE99FBA1251BD22100863D84 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		DE99FBA3251BD23C00863D84 /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		DE99FBA5251BD25500863D84 /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		DE99FBA7251BD27A00863D84 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		DE99FBA9251BD2AF00863D84 /* WireframeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeInterface.swift; sourceTree = "<group>"; };
 		F1DF799ED3F59F05253BD3FB /* Pods-MarleySpoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoon.release.xcconfig"; path = "Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,10 +90,10 @@
 		DE99FB76251BCDB500863D84 /* MarleySpoon */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FB9D251BD1D100863D84 /* Library */,
 				DE99FB95251BD05000863D84 /* Entities */,
 				DE99FB8F251BCF2D00863D84 /* Data Manager */,
 				DE99FB8B251BCDED00863D84 /* Core */,
-				DE99FB7B251BCDB500863D84 /* ViewController.swift */,
 				DE99FB8C251BCE7B00863D84 /* Resources */,
 				DE99FB8D251BCE8700863D84 /* Supporting Files */,
 			);
@@ -142,6 +152,27 @@
 				DE99FB9A251BD08B00863D84 /* Chef.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		DE99FB9D251BD1D100863D84 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FB9E251BD1EF00863D84 /* AutoLayout + Extentions.swift */,
+				DE99FBA0251BD21500863D84 /* VIPER */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		DE99FBA0251BD21500863D84 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FBA1251BD22100863D84 /* ViewInterface.swift */,
+				DE99FBA3251BD23C00863D84 /* InteractorInterface.swift */,
+				DE99FBA5251BD25500863D84 /* PresenterInterface.swift */,
+				DE99FBA7251BD27A00863D84 /* BaseWireframe.swift */,
+				DE99FBA9251BD2AF00863D84 /* WireframeInterface.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 		F020772C410A9DF79ED9A58A /* Pods */ = {
@@ -268,12 +299,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE99FB94251BCF9400863D84 /* ContentfulClientProvider.swift in Sources */,
-				DE99FB7C251BCDB500863D84 /* ViewController.swift in Sources */,
 				DE99FB78251BCDB500863D84 /* AppDelegate.swift in Sources */,
+				DE99FBA6251BD25500863D84 /* PresenterInterface.swift in Sources */,
+				DE99FBA8251BD27A00863D84 /* BaseWireframe.swift in Sources */,
 				DE99FB9B251BD08B00863D84 /* Chef.swift in Sources */,
+				DE99FB9F251BD1EF00863D84 /* AutoLayout + Extentions.swift in Sources */,
+				DE99FBA2251BD22100863D84 /* ViewInterface.swift in Sources */,
 				DE99FB99251BD07600863D84 /* Tag.swift in Sources */,
+				DE99FBA4251BD23C00863D84 /* InteractorInterface.swift in Sources */,
 				DE99FB97251BD05C00863D84 /* Recipe.swift in Sources */,
 				DE99FB92251BCF6E00863D84 /* ContentfulCredentials.swift in Sources */,
+				DE99FBAA251BD2AF00863D84 /* WireframeInterface.swift in Sources */,
 				DE99FB7A251BCDB500863D84 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
