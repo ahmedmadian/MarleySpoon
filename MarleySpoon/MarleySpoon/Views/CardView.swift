@@ -42,6 +42,7 @@ class CardView: UIView {
     private var backgroundImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.kf.indicatorType = .activity
         return imageView
     }()
     

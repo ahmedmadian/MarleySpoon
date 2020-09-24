@@ -37,16 +37,16 @@ extension RecipesPresenter: RecipesPresentation {
     func viewDidLoad() {
         self._view.configHeader(with: ReceipesHeaderViewModel(imageNamed: "header", title: "Recipes"))
         self._view.showLoader()
-        _interactor.getRecipes { [weak self] (result) in
+        _interactor.getRecipes { [unowned self] (result) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let recipes):
-                    self?._items = recipes
-                    self?._view.reloadData()
+                    self._items = recipes
+                    self._view.reloadData()
                 case .failure(let error):
-                    self?._wireframe.showErrorAlert(with: error.localizedDescription)
+                    self._wireframe.showErrorAlert(with: error.localizedDescription)
                 }
-                self?._view.hideLoader()
+                self._view.hideLoader()
             }
         }
     }
