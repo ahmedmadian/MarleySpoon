@@ -9,6 +9,7 @@
 import Foundation
 
 protocol RecipesView: ViewInterface {
+    func configHeader(with viewModel: ReceipesHeaderViewModel)
     func reloadData()
 }
 

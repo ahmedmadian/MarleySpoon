@@ -60,6 +60,10 @@ class RecipesViewController: BaseViewController {
 // MARK: - Recipes View Output -
 
 extension RecipesViewController: RecipesView {
+    func configHeader(with viewModel: ReceipesHeaderViewModel) {
+        self.header.config(with: viewModel)
+    }
+    
     func reloadData() {
         self.tableView.reloadData()
     }

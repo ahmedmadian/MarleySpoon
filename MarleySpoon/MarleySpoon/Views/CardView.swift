@@ -13,7 +13,7 @@ class CardView: UIView {
     
     
     // MARK: ViewModel
-    var viewModel: CardViewModel {
+    private var viewModel: CardViewModel {
         didSet {
             self.titleLabel.text = viewModel.title
             self.backgroundImageView.kf.setImage(with: viewModel.backgroundImageURL,placeholder: UIImage(named: "logo") , options: [
@@ -24,7 +24,7 @@ class CardView: UIView {
         }
     }
        
-    // MARK: - View Heiracrhy -
+    // MARK: - View Hierarchy -
     
     private let shadowView: UIView = {
         let view = UIView()
@@ -121,18 +121,14 @@ class CardView: UIView {
     
     /// Card configurations
     private func convertContainerViewToCardView() {
-        
         updateLayout(for: .card)
-        
         containerView.layer.cornerRadius = 20
         containerView.layer.masksToBounds = true
     }
     
     /// Full Screen Configurations
     private func convertContainerViewToFullScreen() {
-        
         updateLayout(for: .full)
-        
         containerView.layer.cornerRadius = 0
         containerView.layer.masksToBounds = true
     }
@@ -156,7 +152,6 @@ class CardView: UIView {
 
     
     private func addShadow() {
-        
         shadowView.layer.cornerRadius = 20
         shadowView.layer.shadowColor = UIColor.black.cgColor
         shadowView.layer.shadowOpacity = 0.2
@@ -165,15 +160,33 @@ class CardView: UIView {
     }
     
     private func removeShadow() {
-        
         shadowView.layer.shadowColor = UIColor.clear.cgColor
         shadowView.layer.shadowOpacity = 0
         shadowView.layer.shadowRadius = 0
         shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
     
-    
     func configure(with viewModel: CardViewModel) {
         self.viewModel = viewModel
     }
+}
+
+
+class CardViewModel {
+    
+    var viewMode: CardViewMode
+    var title: String
+    var backgroundImageURL: URL?
+    
+    init(title: String, backgroundImageURL: URL?, viewMode: CardViewMode = .card) {
+        self.title = title
+        self.backgroundImageURL = backgroundImageURL
+        self.viewMode = viewMode
+    }
+    
+}
+
+enum CardViewMode {
+    case full
+    case card
 }

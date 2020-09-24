@@ -30,7 +30,6 @@
 		DE99FBB9251BD40800863D84 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBB8251BD40800863D84 /* RecipeViewModel.swift */; };
 		DE99FBBC251BD42D00863D84 /* ReceipesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBBB251BD42D00863D84 /* ReceipesHeaderView.swift */; };
 		DE99FBBE251BD44500863D84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBBD251BD44500863D84 /* CardView.swift */; };
-		DE99FBC0251BD46000863D84 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBBF251BD46000863D84 /* CardViewModel.swift */; };
 		DE99FBC4251BD4A700863D84 /* RecipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC3251BD4A700863D84 /* RecipesPresenter.swift */; };
 		DE99FBC6251BD4DA00863D84 /* RecipesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC5251BD4DA00863D84 /* RecipesInteractor.swift */; };
 		DE99FBC8251BD4F100863D84 /* RecipesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC7251BD4F100863D84 /* RecipesWireframe.swift */; };
@@ -73,7 +72,6 @@
 		DE99FBB8251BD40800863D84 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		DE99FBBB251BD42D00863D84 /* ReceipesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipesHeaderView.swift; sourceTree = "<group>"; };
 		DE99FBBD251BD44500863D84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		DE99FBBF251BD46000863D84 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		DE99FBC3251BD4A700863D84 /* RecipesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPresenter.swift; sourceTree = "<group>"; };
 		DE99FBC5251BD4DA00863D84 /* RecipesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesInteractor.swift; sourceTree = "<group>"; };
 		DE99FBC7251BD4F100863D84 /* RecipesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesWireframe.swift; sourceTree = "<group>"; };
@@ -261,19 +259,10 @@
 		DE99FBBA251BD41C00863D84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FBBD251BD44500863D84 /* CardView.swift */,
 				DE99FBBB251BD42D00863D84 /* ReceipesHeaderView.swift */,
-				DE99FBC1251BD47800863D84 /* CardView */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		DE99FBC1251BD47800863D84 /* CardView */ = {
-			isa = PBXGroup;
-			children = (
-				DE99FBBD251BD44500863D84 /* CardView.swift */,
-				DE99FBBF251BD46000863D84 /* CardViewModel.swift */,
-			);
-			path = CardView;
 			sourceTree = "<group>";
 		};
 		DE99FBC2251BD49100863D84 /* Presenter */ = {
@@ -518,7 +507,6 @@
 				DE99FB92251BCF6E00863D84 /* ContentfulCredentials.swift in Sources */,
 				DE99FBAA251BD2AF00863D84 /* WireframeInterface.swift in Sources */,
 				DE99FB7A251BCDB500863D84 /* SceneDelegate.swift in Sources */,
-				DE99FBC0251BD46000863D84 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

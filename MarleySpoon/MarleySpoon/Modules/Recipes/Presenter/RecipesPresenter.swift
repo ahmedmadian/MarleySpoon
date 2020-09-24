@@ -35,7 +35,7 @@ extension RecipesPresenter: RecipesPresentation {
     }
     
     func viewDidLoad() {
-        
+        self._view.configHeader(with: ReceipesHeaderViewModel(imageNamed: "header", title: "Recipes"))
         self._view.showLoader()
         _interactor.getRecipes { [weak self] (result) in
             DispatchQueue.main.async {
