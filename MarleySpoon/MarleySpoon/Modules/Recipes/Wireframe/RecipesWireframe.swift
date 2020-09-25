@@ -16,9 +16,9 @@ class RecipesWireframe: BaseWireframe {
         let moduleViewController = RecipesViewController()
         super.init(viewController: moduleViewController)
         
-        let recipesRemoteService = RecipesRemoteGetway(client: ContentfulClientProvider(credentials: ContentfulCredentials.default).deliveryClient)
+        let recipesGetway = RecipesRemoteGetway(client: ContentfulClientProvider(credentials: ContentfulCredentials.default).deliveryClient)
         
-        let interactor = RecipesInteractor(recipesGetway: recipesRemoteService)
+        let interactor = RecipesInteractor(recipesGetway: recipesGetway)
         
         let presenter = RecipesPresenter(view: moduleViewController, interactor: interactor, wireframe: self)
         
