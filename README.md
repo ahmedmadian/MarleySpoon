@@ -7,7 +7,7 @@ This repository contains a demo for sample Master-Detail iOS App, An Application
 
 ### Run Requirements
 
-* Xcode 10.2
+* Xcode 11
 * Swift 5
 
 ### Installation
