@@ -11,6 +11,8 @@ import Foundation
 struct ContentfulCredentials {
 
     static let defaultDomainHost = "contentful.com"
+    static let CONTENTFUL_SPACE_ID_KEY = "CONTENTFUL_SPACE_ID"
+    static let CONTENTFUL_DELIVERY_TOKEN_KEY = "CONTENTFUL_DELIVERY_TOKEN"
 
     let spaceId: String
     let deliveryAPIAccessToken: String
@@ -19,8 +21,8 @@ struct ContentfulCredentials {
     static let `default`: ContentfulCredentials = {
         guard let bundleInfo = Bundle.main.infoDictionary else { fatalError() }
 
-        let spaceId = bundleInfo["CONTENTFUL_SPACE_ID"] as! String
-        let deliveryAPIAccessToken = bundleInfo["CONTENTFUL_DELIVERY_TOKEN"] as! String
+        let spaceId = bundleInfo[CONTENTFUL_SPACE_ID_KEY] as! String
+        let deliveryAPIAccessToken = bundleInfo[CONTENTFUL_DELIVERY_TOKEN_KEY] as! String
 
         return ContentfulCredentials(
             spaceId: spaceId,

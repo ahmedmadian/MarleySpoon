@@ -33,7 +33,7 @@
 		DE99FBC4251BD4A700863D84 /* RecipesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC3251BD4A700863D84 /* RecipesPresenter.swift */; };
 		DE99FBC6251BD4DA00863D84 /* RecipesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC5251BD4DA00863D84 /* RecipesInteractor.swift */; };
 		DE99FBC8251BD4F100863D84 /* RecipesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBC7251BD4F100863D84 /* RecipesWireframe.swift */; };
-		DE99FBCD251BD59500863D84 /* RecipesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBCC251BD59500863D84 /* RecipesService.swift */; };
+		DE99FBCD251BD59500863D84 /* RecipesRemoteGetway.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBCC251BD59500863D84 /* RecipesRemoteGetway.swift */; };
 		DE99FBD0251BD6AA00863D84 /* RecipeDetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBCF251BD6AA00863D84 /* RecipeDetailsContract.swift */; };
 		DE99FBD3251BD6D700863D84 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBD2251BD6D700863D84 /* RecipeDetailsViewController.swift */; };
 		DE99FBD5251BD70400863D84 /* RecipeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBD4251BD70400863D84 /* RecipeDetailsViewModel.swift */; };
@@ -42,6 +42,7 @@
 		DE99FBDD251BD78100863D84 /* RecipeDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBDC251BD78100863D84 /* RecipeDetailsPresenter.swift */; };
 		DE99FBE0251BD7A800863D84 /* RecipeDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBDF251BD7A800863D84 /* RecipeDetailsInteractor.swift */; };
 		DE99FBE3251BD7D300863D84 /* RecipeDetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FBE2251BD7D300863D84 /* RecipeDetailsWireframe.swift */; };
+		DE99FC1C251E56D600863D84 /* RecipesGetway.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99FC1B251E56D600863D84 /* RecipesGetway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +76,7 @@
 		DE99FBC3251BD4A700863D84 /* RecipesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPresenter.swift; sourceTree = "<group>"; };
 		DE99FBC5251BD4DA00863D84 /* RecipesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesInteractor.swift; sourceTree = "<group>"; };
 		DE99FBC7251BD4F100863D84 /* RecipesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesWireframe.swift; sourceTree = "<group>"; };
-		DE99FBCC251BD59500863D84 /* RecipesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesService.swift; sourceTree = "<group>"; };
+		DE99FBCC251BD59500863D84 /* RecipesRemoteGetway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRemoteGetway.swift; sourceTree = "<group>"; };
 		DE99FBCF251BD6AA00863D84 /* RecipeDetailsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsContract.swift; sourceTree = "<group>"; };
 		DE99FBD2251BD6D700863D84 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		DE99FBD4251BD70400863D84 /* RecipeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		DE99FBDC251BD78100863D84 /* RecipeDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsPresenter.swift; sourceTree = "<group>"; };
 		DE99FBDF251BD7A800863D84 /* RecipeDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsInteractor.swift; sourceTree = "<group>"; };
 		DE99FBE2251BD7D300863D84 /* RecipeDetailsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsWireframe.swift; sourceTree = "<group>"; };
+		DE99FC1B251E56D600863D84 /* RecipesGetway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesGetway.swift; sourceTree = "<group>"; };
 		F1DF799ED3F59F05253BD3FB /* Pods-MarleySpoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarleySpoon.release.xcconfig"; path = "Target Support Files/Pods-MarleySpoon/Pods-MarleySpoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,10 +130,9 @@
 		DE99FB76251BCDB500863D84 /* MarleySpoon */ = {
 			isa = PBXGroup;
 			children = (
-				DE99FB8B251BCDED00863D84 /* Core */,
+				DE99FB8B251BCDED00863D84 /* App */,
 				DE99FB9D251BD1D100863D84 /* Library */,
 				DE99FBAE251BD35700863D84 /* Modules */,
-				DE99FBBA251BD41C00863D84 /* Views */,
 				DE99FB95251BD05000863D84 /* Entities */,
 				DE99FB8F251BCF2D00863D84 /* Data Manager */,
 				DE99FB8C251BCE7B00863D84 /* Resources */,
@@ -140,13 +141,13 @@
 			path = MarleySpoon;
 			sourceTree = "<group>";
 		};
-		DE99FB8B251BCDED00863D84 /* Core */ = {
+		DE99FB8B251BCDED00863D84 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				DE99FB77251BCDB500863D84 /* AppDelegate.swift */,
 				DE99FB79251BCDB500863D84 /* SceneDelegate.swift */,
 			);
-			path = Core;
+			path = App;
 			sourceTree = "<group>";
 		};
 		DE99FB8C251BCE7B00863D84 /* Resources */ = {
@@ -170,8 +171,8 @@
 		DE99FB8F251BCF2D00863D84 /* Data Manager */ = {
 			isa = PBXGroup;
 			children = (
-				DE99FBCB251BD57E00863D84 /* RemoteServices */,
-				DE99FB90251BCF4F00863D84 /* Contentful API */,
+				DE99FC1A251E56C500863D84 /* EntityGetways */,
+				DE99FBCB251BD57E00863D84 /* RemoteGetways */,
 			);
 			path = "Data Manager";
 			sourceTree = "<group>";
@@ -198,14 +199,14 @@
 		DE99FB9D251BD1D100863D84 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				DE99FBAB251BD2F300863D84 /* BaseViewController.swift */,
-				DE99FB9E251BD1EF00863D84 /* AutoLayout + Extentions.swift */,
-				DE99FBA0251BD21500863D84 /* VIPER */,
+				DE99FBA0251BD21500863D84 /* Base VIPER */,
+				DE99FBBA251BD41C00863D84 /* Views */,
+				DE99FC19251E538E00863D84 /* Extensions */,
 			);
 			path = Library;
 			sourceTree = "<group>";
 		};
-		DE99FBA0251BD21500863D84 /* VIPER */ = {
+		DE99FBA0251BD21500863D84 /* Base VIPER */ = {
 			isa = PBXGroup;
 			children = (
 				DE99FBA1251BD22100863D84 /* ViewInterface.swift */,
@@ -214,7 +215,7 @@
 				DE99FBA7251BD27A00863D84 /* BaseWireframe.swift */,
 				DE99FBA9251BD2AF00863D84 /* WireframeInterface.swift */,
 			);
-			path = VIPER;
+			path = "Base VIPER";
 			sourceTree = "<group>";
 		};
 		DE99FBAE251BD35700863D84 /* Modules */ = {
@@ -259,6 +260,7 @@
 		DE99FBBA251BD41C00863D84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DE99FBAB251BD2F300863D84 /* BaseViewController.swift */,
 				DE99FBBD251BD44500863D84 /* CardView.swift */,
 				DE99FBBB251BD42D00863D84 /* ReceipesHeaderView.swift */,
 			);
@@ -289,12 +291,13 @@
 			path = Wireframe;
 			sourceTree = "<group>";
 		};
-		DE99FBCB251BD57E00863D84 /* RemoteServices */ = {
+		DE99FBCB251BD57E00863D84 /* RemoteGetways */ = {
 			isa = PBXGroup;
 			children = (
-				DE99FBCC251BD59500863D84 /* RecipesService.swift */,
+				DE99FBCC251BD59500863D84 /* RecipesRemoteGetway.swift */,
+				DE99FB90251BCF4F00863D84 /* Contentful API */,
 			);
-			path = RemoteServices;
+			path = RemoteGetways;
 			sourceTree = "<group>";
 		};
 		DE99FBCE251BD69400863D84 /* RecipeDetails */ = {
@@ -350,6 +353,22 @@
 				DE99FBE2251BD7D300863D84 /* RecipeDetailsWireframe.swift */,
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		DE99FC19251E538E00863D84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FB9E251BD1EF00863D84 /* AutoLayout + Extentions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DE99FC1A251E56C500863D84 /* EntityGetways */ = {
+			isa = PBXGroup;
+			children = (
+				DE99FC1B251E56D600863D84 /* RecipesGetway.swift */,
+			);
+			path = EntityGetways;
 			sourceTree = "<group>";
 		};
 		F020772C410A9DF79ED9A58A /* Pods */ = {
@@ -499,11 +518,12 @@
 				DE99FBA2251BD22100863D84 /* ViewInterface.swift in Sources */,
 				DE99FB99251BD07600863D84 /* Tag.swift in Sources */,
 				DE99FBBE251BD44500863D84 /* CardView.swift in Sources */,
+				DE99FC1C251E56D600863D84 /* RecipesGetway.swift in Sources */,
 				DE99FBA4251BD23C00863D84 /* InteractorInterface.swift in Sources */,
 				DE99FBD8251BD72800863D84 /* TagCell.swift in Sources */,
 				DE99FB97251BD05C00863D84 /* Recipe.swift in Sources */,
 				DE99FBC6251BD4DA00863D84 /* RecipesInteractor.swift in Sources */,
-				DE99FBCD251BD59500863D84 /* RecipesService.swift in Sources */,
+				DE99FBCD251BD59500863D84 /* RecipesRemoteGetway.swift in Sources */,
 				DE99FB92251BCF6E00863D84 /* ContentfulCredentials.swift in Sources */,
 				DE99FBAA251BD2AF00863D84 /* WireframeInterface.swift in Sources */,
 				DE99FB7A251BCDB500863D84 /* SceneDelegate.swift in Sources */,

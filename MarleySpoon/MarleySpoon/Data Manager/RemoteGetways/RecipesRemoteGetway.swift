@@ -1,5 +1,5 @@
 //
-//  RecipesService.swift
+//  RecipesRemoteGetway.swift
 //  MarleySpoon
 //
 //  Created by Ahmed Madian on 9/23/20.
@@ -8,11 +8,7 @@
 
 import Contentful
 
-protocol RecipesRemoteService {
-    func fetchRecipes(_ completion: @escaping (Result<[Recipe], Error>) -> Void)
-}
-
-class RecipesService {
+class RecipesRemoteGetway {
     
     private let _client: Client
     
@@ -21,9 +17,9 @@ class RecipesService {
     }
 }
 
-extension RecipesService: RecipesRemoteService {
+extension RecipesRemoteGetway: RecipesGetway {
     
-    func fetchRecipes(_ completion: @escaping (Result<[Recipe], Error>) -> Void) {
+    func fetchRecipes(completion: @escaping FetchRecpiesEntityGatewayCompletionHandler) {
         _client.fetchArray(of: Recipe.self) { (result: Result<HomogeneousArrayResponse<Recipe>, Error>) in
             switch result {
             case .success(let arrayResponse):
